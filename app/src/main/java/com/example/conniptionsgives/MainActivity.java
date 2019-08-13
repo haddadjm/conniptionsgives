@@ -9,7 +9,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button GivesConniptions;
+    private Button Gives;
+    private Button Praise;
     private Button Toast;
 
 
@@ -18,11 +19,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GivesConniptions = findViewById(R.id.conniptions);
-        GivesConniptions.setOnClickListener(new View.OnClickListener() {
+        Gives = findViewById(R.id.conniptions);
+        Gives.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openGiveConniptions();
+            }
+        });
+        Praise = findViewById(R.id.praise);
+        Praise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPraiseIt();
             }
         });
         Toast = findViewById(R.id.toast);
@@ -37,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,GiveConniptions.class);
         startActivity(intent);
     }
-    public void PraiseIt(View view){
-        Intent intent = new Intent(this,PraiseIt.class);
+    public void openPraiseIt(){
+        Intent intent = new Intent(this, PraiseIt.class);
         startActivity(intent);
     }
     public void openTimeForAToast(){
