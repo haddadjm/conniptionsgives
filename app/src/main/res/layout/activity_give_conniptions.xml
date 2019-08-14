@@ -4,7 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GiveConniptions"
-    android:background="@drawable/conniptions">
+    tools:context=".GiveConniptions">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/conniptions"
+        android:id="@+id/hawkwood"
+        />
+
 
 </LinearLayout>

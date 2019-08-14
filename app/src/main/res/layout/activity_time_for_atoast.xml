@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimeForAToast"
-    android:background="@drawable/a_toast">
+    tools:context=".TimeForAToast">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/a_toast"
+        android:id="@+id/siegward"/>
 
 </LinearLayout>

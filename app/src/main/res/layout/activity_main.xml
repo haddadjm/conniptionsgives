@@ -7,8 +7,7 @@
     android:background="@android:color/black"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
     <Button
@@ -16,26 +15,24 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/white"
+        android:background="@color/colorAccent"
         android:text="@string/hawkwood"
-        android:textAllCaps="true"
-        />
+        android:textAllCaps="true" />
 
     <Button
         android:id="@+id/praise"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/white"
+        android:background="@color/colorAccent"
         android:text="@string/solaire"
-        android:textAllCaps="true"
-        />
+        android:textAllCaps="true" />
 
     <Button
         android:id="@+id/toast"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:background="@android:color/white"
+        android:background="@color/colorAccent"
         android:text="@string/siegward"
         android:textAllCaps="true" />
 
