@@ -4,12 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hawkwood"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/hawkwood"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TimeForAToast"></activity>
+        <activity android:name=".YouDiedVideo"></activity>
+        <activity android:name=".GetParried" />
+        <activity android:name=".YouDied" />
+        <activity android:name=".TimeForAToast" />
         <activity android:name=".PraiseIt" />
         <activity android:name=".GiveConniptions" />
         <activity android:name=".MainActivity">

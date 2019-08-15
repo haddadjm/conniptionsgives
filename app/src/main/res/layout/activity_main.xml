@@ -1,39 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/memes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/imgdesc"
+        app:layout_constraintBottom_toTopOf="@+id/praise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/conniptions"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="@string/hawkwood"
-        android:textAllCaps="true" />
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/hawkwoodimgbar2"
+        app:layout_constraintBottom_toTopOf="@+id/youdied"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toast" />
 
     <Button
         android:id="@+id/praise"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="@string/solaire"
-        android:textAllCaps="true" />
+        android:background="@drawable/solaireimagebar"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/toast"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="@color/colorAccent"
-        android:text="@string/siegward"
-        android:textAllCaps="true" />
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/targetshieldimagebar"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/conniptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conniptions" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/youdied"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bonusmeme"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conniptions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

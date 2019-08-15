@@ -32,6 +32,7 @@ public class GiveConniptions extends AppCompatActivity {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
                         stop();
+
                     }
                 });
 

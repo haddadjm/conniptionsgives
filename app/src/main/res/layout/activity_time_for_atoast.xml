@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimeForAToast">
+    tools:context=".TimeForAToast"
+    android:background="@android:color/black">
 
     <Button
+        android:id="@+id/targetshield"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/a_toast"
-        android:id="@+id/siegward"/>
+        android:layout_height="400sp"
+        android:layout_gravity="center"
+        android:background="@drawable/target_shield_ds3" />
+
+
 
 </LinearLayout>
